@@ -1,0 +1,68 @@
+@import "~foundation-sites/scss/util/util.scss";
+
+.banner {
+  background-image: url('../../images/calculator.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 300px;
+  display: flex;
+
+  @include breakpoint(medium only) {
+    height: 200px;
+  }
+
+  @include breakpoint(small only) {
+    height: 100px;
+  }
+}
+
+button {
+  background-color: red;
+  color: #0000008a;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 3px;
+  font-family: aller display;
+}
+
+.banner-title {
+  color: white;
+  -webkit-text-stroke: 1px black;
+  margin: auto;
+  font-family: aller display;
+  font-size: 3em;
+  
+  @include breakpoint(small only) {
+    font-size: min(3em, 10vw);
+  }
+}
+
+.form-panel {
+  padding: 3em 5em;
+
+  @include breakpoint(small only) {
+    padding: 0;
+  }
+
+  @include breakpoint(medium only) {
+    padding: 1em;
+  }
+}
+
+label {
+  color: #0000008a;
+  font-family: aller;
+}
+
+input, select {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #E0E1E1;
+  background-color: #F7F8F9;
+  height: 2em;
+}
+
+li.submitted {
+  text-decoration: line-through
+}
